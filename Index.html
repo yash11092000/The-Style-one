@@ -12,6 +12,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            
         }
 
         #HomeSection {
@@ -20,19 +21,35 @@
         }
 
         #AboutUsSection {
-            height: 80vh;
+            /* height: 80vh; */
             width: 100%;
         }
 
         #ServicesSection {
-            height: 80vh;
+            /* height: 80vh; */
             width: 100%;
+
         }
+
+        #BrandName {
+            font-family: "Syncopate", sans-serif;
+            font-weight: 700;
+            font-style: bold;
+        }
+        .navbar a{
+            font-size: 1.5rem;
+        }
+       
     </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Syncopate:wght@400;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary rounded m-3">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Navbar</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -56,13 +73,551 @@
         </div>
     </nav>
 
-    <div id="HomeSection">Home Section</div>
-    <div id="AboutUsSection">About Us Section</div>
-    <div id="ServicesSection">Services </div>
+
+    <div id="HomeSection mt-3" style="position: relative;">
+        <img src="./images/Home.jpg" class="img-fluid">
+        <p id="BrandName" style="position: absolute;color: white;top: 48%;left: 50%;font-size: 4rem;transform: translate(-50%, -50%);">The Style Zone</p>
+    </div>
+
+
+    <div id="AboutUsSection">
+            <!-- About Us Section -->
+    <section class="py-5" id="about">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="fw-bold text-light mb-3">About Us</h2>
+                    <div class="d-flex justify-content-center mb-4">
+                        <div class="bg-danger" style="width: 80px; height: 3px;"></div>
+                    </div>
+                    <p class="lead text-muted">
+                        Discover the story behind our beauty parlour and our commitment to excellence
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Main Content Row -->
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="rounded overflow-hidden shadow">
+                        <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="Our Beauty Parlour" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="fw-bold text-dark mb-4">Welcome to Glamour Beauty Parlour</h3>
+                    <p class="text-muted mb-3">
+                        Established in 2010, Glamour Beauty Parlour has been providing exceptional beauty services 
+                        to our valued clients. Our mission is to enhance your natural beauty and boost your confidence.
+                    </p>
+                    <p class="text-muted mb-4">
+                        We use only premium, cruelty-free products and the latest techniques to ensure you receive 
+                        the best possible treatment. Our team of certified beauty professionals undergoes regular 
+                        training to stay updated with the latest trends and techniques.
+                    </p>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>Experienced Professionals</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>Premium Products</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>Hygienic Environment</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>Customized Services</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>Affordable Pricing</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>Modern Equipment</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-4">
+                        <a href="#contact" class="btn btn-danger btn-lg px-4">Book Consultation</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Values Section -->
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="fw-bold text-dark mb-3">Our Core Values</h2>
+                    <div class="d-flex justify-content-center mb-4">
+                        <div class="bg-danger" style="width: 80px; height: 3px;"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="text-danger mb-3">
+                                <i class="bi bi-star-fill fs-1"></i>
+                            </div>
+                            <h4 class="card-title fw-bold">Excellence</h4>
+                            <p class="card-text text-muted">
+                                We are committed to delivering the highest quality services using premium products and the latest techniques.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="text-danger mb-3">
+                                <i class="bi bi-heart-fill fs-1"></i>
+                            </div>
+                            <h4 class="card-title fw-bold">Personalization</h4>
+                            <p class="card-text text-muted">
+                                We believe every client is unique. We create customized beauty solutions tailored just for you.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="text-danger mb-3">
+                                <i class="bi bi-shield-fill-check fs-1"></i>
+                            </div>
+                            <h4 class="card-title fw-bold">Hygiene & Safety</h4>
+                            <p class="card-text text-muted">
+                                Your safety is our priority. We maintain the highest standards of cleanliness and use sterilized tools.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+    </section>
+    </div>
+
+
+
+    <div id="ServicesSection">
+     <!-- Services Section -->
+    <section class="py-5" id="services">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="fw-bold text-light mb-3">Our Services</h2>
+                    <div class="d-flex justify-content-center mb-4">
+                        <div class="bg-danger" style="width: 80px; height: 3px;"></div>
+                    </div>
+                    <p class="lead text-muted">
+                        We offer a wide range of beauty services to cater to all your needs. 
+                        From hair styling to skincare, we've got you covered.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Services Row 1 -->
+            <div class="row g-4 mb-4">
+                <!-- Hair Styling Service -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="text-danger mb-3">
+                                <i class="bi bi-scissors fs-1"></i>
+                            </div>
+                            <h4 class="card-title fw-bold mb-3">Hair Styling</h4>
+                            <p class="card-text text-muted mb-4">
+                                From trendy haircuts to classic styles, our expert hairstylists will give you the perfect look for any occasion.
+                            </p>
+                            <ul class="list-unstyled text-start">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>Haircut & Styling</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>Hair Coloring</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>Keratin Treatment</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>Hair Spa</li>
+                            </ul>
+                            <div class="mt-4">
+                                <button class="btn btn-outline-danger">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Facials & Skincare Service -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="text-danger mb-3">
+                                <i class="bi bi-flower1 fs-1"></i>
+                            </div>
+                            <h4 class="card-title fw-bold mb-3">Facials & Skincare</h4>
+                            <p class="card-text text-muted mb-4">
+                                Rejuvenate your skin with our specialized facials and skincare treatments tailored to your skin type.
+                            </p>
+                            <ul class="list-unstyled text-start">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>Classic Facial</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>Anti-Aging Treatment</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>Acne Control Therapy</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>Skin Whitening</li>
+                            </ul>
+                            <div class="mt-4">
+                                <button class="btn btn-outline-danger">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Makeup & Bridal Service -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="text-danger mb-3">
+                                <i class="bi bi-brush fs-1"></i>
+                            </div>
+                            <h4 class="card-title fw-bold mb-3">Makeup & Bridal</h4>
+                            <p class="card-text text-muted mb-4">
+                                Perfect for weddings and special events, our professional makeup artists will enhance your natural beauty.
+                            </p>
+                            <ul class="list-unstyled text-start">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>Bridal Makeup</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>Party Makeup</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>Engagement Makeup</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>Makeup Lessons</li>
+                            </ul>
+                            <div class="mt-4">
+                                <button class="btn btn-outline-danger">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Services Row 2 -->
+            <div class="row g-4 mb-4">
+                <!-- Nail Care Service -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="text-danger mb-3">
+                                <i class="bi bi-hand-index-thumb fs-1"></i>
+                            </div>
+                            <h4 class="card-title fw-bold mb-3">Nail Care</h4>
+                            <p class="card-text text-muted mb-4">
+                                From simple manicures to intricate nail art, we offer a complete range of nail services.
+                            </p>
+                            <ul class="list-unstyled text-start">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>Manicure & Pedicure</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>Nail Extensions</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>Nail Art</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>Gel Polish</li>
+                            </ul>
+                            <div class="mt-4">
+                                <button class="btn btn-outline-danger">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Waxing & Threading Service -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="text-danger mb-3">
+                                <i class="bi bi-droplet-half fs-1"></i>
+                            </div>
+                            <h4 class="card-title fw-bold mb-3">Waxing & Threading</h4>
+                            <p class="card-text text-muted mb-4">
+                                Our hair removal services are quick, effective, and virtually painless with premium products.
+                            </p>
+                            <ul class="list-unstyled text-start">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>Full Body Waxing</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>Facial Threading</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>Brazilian Wax</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>Brow Shaping</li>
+                            </ul>
+                            <div class="mt-4">
+                                <button class="btn btn-outline-danger">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Spa & Massage Service -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="text-danger mb-3">
+                                <i class="bi bi-gem fs-1"></i>
+                            </div>
+                            <h4 class="card-title fw-bold mb-3">Spa & Massage</h4>
+                            <p class="card-text text-muted mb-4">
+                                Relax and rejuvenate with our therapeutic spa treatments and massages designed to relieve stress.
+                            </p>
+                            <ul class="list-unstyled text-start">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>Aromatherapy</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>Swedish Massage</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>Body Scrub</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>Hot Stone Therapy</li>
+                            </ul>
+                            <div class="mt-4">
+                                <button class="btn btn-outline-danger">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </section>    
+    
+    </div>
+    <div id="contact">
+         <!-- Appointment Booking Section -->
+    <section class="py-5" id="appointment">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="fw-bold text-light mb-3">Book an Appointment</h2>
+                    <div class="d-flex justify-content-center mb-4">
+                        <div class="bg-danger" style="width: 80px; height: 3px;"></div>
+                    </div>
+                    <p class="lead text-muted">
+                        Fill out the form below to schedule your appointment. We'll get back to you within 24 hours to confirm.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="card border-0 shadow-lg">
+                        <div class="card-body p-5">
+                            <div class="row">
+                                <!-- Appointment Form -->
+                                <div class="col-lg-12">
+                                    <h4 class="fw-bold mb-4">Appointment Details</h4>
+                                    <form id="bookingForm">
+                                        <!-- Personal Information -->
+                                        <div class="row mb-4">
+                                            <div class="col-md-6 mb-3">
+                                                <label for="firstName" class="form-label fw-medium">First Name <span class="text-danger">*</span></label>
+                                                <input type="text" class="form-control" id="firstName" placeholder="Enter your first name" required>
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <label for="lastName" class="form-label fw-medium">Last Name <span class="text-danger">*</span></label>
+                                                <input type="text" class="form-control" id="lastName" placeholder="Enter your last name" required>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="row mb-4">
+                                            <div class="col-md-6 mb-3">
+                                                <label for="email" class="form-label fw-medium">Email Address <span class="text-danger">*</span></label>
+                                                <div class="input-group">
+                                                    <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                                                    <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <label for="phone" class="form-label fw-medium">Phone Number <span class="text-danger">*</span></label>
+                                                <div class="input-group">
+                                                    <span class="input-group-text"><i class="bi bi-phone"></i></span>
+                                                    <input type="tel" class="form-control" id="phone" placeholder="(123) 456-7890" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Service Selection -->
+                                        <div class="row mb-4">
+                                            <div class="col-12 mb-3">
+                                                <label for="service" class="form-label fw-medium">Select Service <span class="text-danger">*</span></label>
+                                                <select class="form-select" id="service" required>
+                                                    <option value="" selected disabled>Choose a service</option>
+                                                    <option value="hair-styling">Hair Styling</option>
+                                                    <option value="facials">Facials & Skincare</option>
+                                                    <option value="makeup">Makeup & Bridal</option>
+                                                    <option value="nail-care">Nail Care</option>
+                                                    <option value="waxing">Waxing & Threading</option>
+                                                    <option value="spa">Spa & Massage</option>
+                                                    <option value="other">Other Services</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Date and Time Selection -->
+                                        <div class="row mb-4">
+                                            <div class="col-md-6 mb-3">
+                                                <label for="date" class="form-label fw-medium">Preferred Date <span class="text-danger">*</span></label>
+                                                <div class="input-group">
+                                                    <span class="input-group-text"><i class="bi bi-calendar"></i></span>
+                                                    <input type="date" class="form-control" id="date" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <label for="time" class="form-label fw-medium">Preferred Time <span class="text-danger">*</span></label>
+                                                <select class="form-select" id="time" required>
+                                                    <option value="" selected disabled>Select time slot</option>
+                                                    <option value="9:00">9:00 AM</option>
+                                                    <option value="10:00">10:00 AM</option>
+                                                    <option value="11:00">11:00 AM</option>
+                                                    <option value="12:00">12:00 PM</option>
+                                                    <option value="13:00">1:00 PM</option>
+                                                    <option value="14:00">2:00 PM</option>
+                                                    <option value="15:00">3:00 PM</option>
+                                                    <option value="16:00">4:00 PM</option>
+                                                    <option value="17:00">5:00 PM</option>
+                                                    <option value="18:00">6:00 PM</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Beautician Selection -->
+                                        <div class="row mb-4">
+                                            <div class="col-12 mb-3">
+                                                <label class="form-label fw-medium">Preferred Beautician (Optional)</label>
+                                                <div class="row g-2">
+                                                    <div class="col-sm-4">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" name="beautician" id="beautician1" value="sophia">
+                                                            <label class="form-check-label" for="beautician1">
+                                                                Vishnu
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-4">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" name="beautician" id="beautician2" value="marcus">
+                                                            <label class="form-check-label" for="beautician2">
+                                                                Shiv
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-4">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" name="beautician" id="beautician3" value="isabella">
+                                                            <label class="form-check-label" for="beautician3">
+                                                                Mahesh
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Additional Message -->
+                                        <div class="row mb-4">
+                                            <div class="col-12 mb-3">
+                                                <label for="message" class="form-label fw-medium">Additional Message (Optional)</label>
+                                                <textarea class="form-control" id="message" rows="4" placeholder="Any specific requirements, concerns, or special requests..."></textarea>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Submit Button -->
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="d-grid">
+                                                    <button type="submit" class="btn btn-danger btn-lg">
+                                                        <i class="bi bi-calendar-check me-2"></i>Book Appointment
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="row mt-3">
+                                            <div class="col-12">
+                                                <p class="text-muted small">
+                                                    <i class="bi bi-info-circle me-1"></i>We'll contact you shortly to confirm your appointment. 
+                                                    For urgent bookings, please call us at (123) 456-7890.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                
+                             
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Confirmation Modal -->
+            <div class="modal fade" id="confirmationModal" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header border-0">
+                            <h5 class="modal-title fw-bold">Appointment Confirmation</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body text-center">
+                            <div class="mb-4">
+                                <i class="bi bi-check-circle-fill text-success fs-1"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3">Thank You!</h4>
+                            <p class="text-muted mb-4">
+                                Your appointment request has been received successfully. 
+                                We will contact you within 24 hours to confirm your booking.
+                            </p>
+                            <p class="text-muted small">
+                                A confirmation email has been sent to your registered email address.
+                            </p>
+                        </div>
+                        <div class="modal-footer border-0 justify-content-center">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </div>
     <div id="Footer">
         <nav class="navbar sticky-bottom bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Sticky bottom</a>
+                <footer class="bg-black text-white pt-5 pb-4" style="border-top: 1px solid #333;width: 100%;">
+    <div class="container text-center text-md-start">
+        <div class="row text-center text-md-start">
+
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold" style="font-family: 'Playfair Display', serif; color: #D4AF37; letter-spacing: 2px;">
+                    The Style Zone
+                </h5>
+                <p class="small text-muted">Elevating your natural beauty with premium care and modern style. Your comfort is our priority.</p>
+            </div>
+
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold text-white">Quick Links</h6>
+                <p><a href="#ServicesSection" class="text-muted text-decoration-none hover-link">Services</a></p>
+                <p><a href="#AboutUsSection" class="text-muted text-decoration-none hover-link">About Us</a></p>
+                <p><a href="#contact" class="text-muted text-decoration-none hover-link">Book Now</a></p>
+            </div>
+
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold text-white">Contact</h6>
+                <p class="small text-muted"><i class="bi bi-geo-alt-fill me-2"></i> 123 Beauty Lane, NY</p>
+                <p class="small text-muted"><i class="bi bi-envelope-fill me-2"></i> info@thestylezone.com</p>
+                <p class="small text-muted"><i class="bi bi-telephone-fill me-2"></i> +1 234 567 890</p>
+            </div>
+
+        </div>
+
+        <hr class="mb-4" style="background-color: #333;">
+
+        <div class="row align-items-center">
+            <div class="col-md-7 col-lg-8">
+                <p class="small text-muted">© 2025 Copyright: <strong>The Style Zone</strong></p>
+            </div>
+            <div class="col-md-5 col-lg-4">
+                <div class="text-center text-md-end">
+                    <a href="#" class="text-white me-4 text-decoration-none"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-white me-4 text-decoration-none"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-white text-decoration-none"><i class="bi bi-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
             </div>
         </nav>
     </div>
@@ -70,5 +625,63 @@
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
     </script>
 </body>
+<script>
+ // Set minimum date to today
+        const today = new Date().toISOString().split('T')[0];
+        document.getElementById('date').setAttribute('min', today);
+        
+        // Form submission handler
+        document.getElementById('bookingForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const firstName = document.getElementById('firstName').value;
+            const service = document.getElementById('service').value;
+            
+            // Show confirmation modal
+            const modal = new bootstrap.Modal(document.getElementById('confirmationModal'));
+            modal.show();
+            
+            // Reset form
+            this.reset();
+        });
+        
+        // Time slots based on selected date (demo logic)
+        document.getElementById('date').addEventListener('change', function() {
+            const timeSelect = document.getElementById('time');
+            const selectedDate = new Date(this.value);
+            const dayOfWeek = selectedDate.getDay();
+            
+            // For demo purposes, show different time slots for weekends
+            if (dayOfWeek === 0 || dayOfWeek === 6) { // Sunday or Saturday
+                // Weekend hours: 10AM - 4PM
+                timeSelect.innerHTML = `
+                    <option value="" selected disabled>Select time slot</option>
+                    <option value="10:00">10:00 AM</option>
+                    <option value="11:00">11:00 AM</option>
+                    <option value="12:00">12:00 PM</option>
+                    <option value="13:00">1:00 PM</option>
+                    <option value="14:00">2:00 PM</option>
+                    <option value="15:00">3:00 PM</option>
+                    <option value="16:00">4:00 PM</option>
+                `;
+            } else {
+                // Weekday hours: 9AM - 6PM
+                timeSelect.innerHTML = `
+                    <option value="" selected disabled>Select time slot</option>
+                    <option value="9:00">9:00 AM</option>
+                    <option value="10:00">10:00 AM</option>
+                    <option value="11:00">11:00 AM</option>
+                    <option value="12:00">12:00 PM</option>
+                    <option value="13:00">1:00 PM</option>
+                    <option value="14:00">2:00 PM</option>
+                    <option value="15:00">3:00 PM</option>
+                    <option value="16:00">4:00 PM</option>
+                    <option value="17:00">5:00 PM</option>
+                    <option value="18:00">6:00 PM</option>
+                `;
+            }
+        }); 
+</script>
 
 </html>
